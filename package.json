@@ -1,0 +1,15 @@
+{
+  "name": "scrapeslides",
+  "version": "0.0.2",
+  "description": "Scrape slides",
+  "main": "server.js",
+  "author": "Hampus Klarin",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "lodash": "^2.4.1",
+    "npm-cache": "^0.1.0",
+    "request": "latest",
+    "swig": "latest"
+  }
+}

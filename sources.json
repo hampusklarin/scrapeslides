@@ -1,0 +1,53 @@
+{ "sources":
+[
+	{
+		"url":"http://www.nidacatering.com/lunch.aspx",
+		"name":"Nida",
+		"dom":".lunchmenyContent"
+	},
+	{
+		"url":"http://9event.se/",
+		"name":"9 Event",
+		"dom":"#lunch div.row.text-center"
+	},
+	{
+		"url":"http://seaside.restaurangbankomat.se/pages/lunchmeny/",
+		"name":"BankOmat",
+		"dom":"#text article"
+	},
+	{
+		"url":"http://www.indiangarden.nu/downloads/",
+		"name":"Indian Garden",
+		"pdf":"lunch.pdf"
+	},
+	{
+		"url":"http://www.wongkee.se/",
+		"name":"Wong Kee",
+		"pdf":"lunchmeny.pdf"
+	},
+	{
+		"url":"http://www.rhinofood.se/extra/menyer/",
+		"name":"Rhino",
+		"filter": {
+			"element":"a",
+			"attr":"href",
+			"contains":"lunch"
+		}
+	},
+	{
+		"url":"http://xn--bistrosjviken-pmb.se/#featured-page-3",
+		"name":"Bistro Sjöviken",
+		"dom":"#dagens-table"
+	},
+	{
+		"url":"http://www.sapori.se/se/liljeholmen/lunch-21608079",
+		"name":"Sapori",
+		"dom":"#collection0"
+	},
+	{
+		"url":"http://blackswan.nu/mat_dryck/lunch/",
+		"name":"The Black Swan",
+		"dom":".main"
+	}	
+]
+}
