@@ -1,12 +1,7 @@
 Scrape slides
 =============
 
-A simple Node.js screen scraper that puts the results into a slide interface
-
-Bugs
-----
-- Usually doesn't work on first load/timeouts
-- One non-responsive source should not crash entire app
+Simple Node.js screen scraper that puts several results into a slide interface
 
 Backlog/Ideas
 ----
@@ -24,7 +19,7 @@ Done
 ----
 - ~~Caching~~
 - ~~Add regex link support for PDF files~~
-- ~~Add support for locating link if it's not the same ~~
+- ~~Add support for locating link if it's different every now and then (for example a restaurant with a different menu each week)~~
 - ~~Make app generic/load source data from json~~
 - ~~Templating~~
 - ~~Maybe a simple navigation with one result per slide instead of a more complex column-based presentation (Reveal.js?)~~
