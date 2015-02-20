@@ -62,15 +62,23 @@ app.get('/', function(req, res) {
 							return src.url == url;
 						});	
 			
+						var result = { name: source.name };
+						if( source.css )
+						{
+							result.css = source.css;
+						}
+
+						var content = '';
+
 						if( source.dom )
 						{
 							var markup = $(source.dom).html();
-							parsedResults.push({ name: source.name, content: markup });
+							content = markup;
 						}
 						else if( source.pdf )
 						{
 							var pdfObject = util.iframePDF(source.url+source.pdf);
-							parsedResults.push({ name: source.name, content: pdfObject });
+							content = pdfObject;
 						}
 						else if( source.filter )
 						{
@@ -81,8 +89,14 @@ app.get('/', function(req, res) {
 							if( links && links[0])
 							{
 								var pdfObject = util.iframePDF(links[0].attribs.href);
-								parsedResults.push({ name: source.name, content: pdfObject });
+								content = pdfObject;
 							}
+						}
+
+						if( content !== '')
+						{
+							result.content = content;
+							parsedResults.push(result);
 						}
 					}
 				}

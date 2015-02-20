@@ -1,33 +1,34 @@
 { "sources":
 [
 	{
-		"url":"http://www.nidacatering.com/lunch.aspx",
 		"name":"Nida",
+		"url":"http://www.nidacatering.com/lunch.aspx",
 		"dom":".lunchmenyContent"
 	},
 	{
-		"url":"http://9event.se/",
 		"name":"9 Event",
-		"dom":"#lunch div.row.text-center"
+		"url":"http://9event.se/",
+		"dom":"#lunch div.row.text-center",
+		"css":".menus .block h2, .menus .block h5 { font-weight: normal; font-family: Lato, sans-serif; text-transform: none; font-size: 1em } .menus .block h5 { color: #93a1a1; }"
 	},
 	{
+		"name":"BankOmat",	
 		"url":"http://seaside.restaurangbankomat.se/pages/lunchmeny/",
-		"name":"BankOmat",
 		"dom":"#text article"
 	},
 	{
-		"url":"http://www.indiangarden.nu/downloads/",
 		"name":"Indian Garden",
+		"url":"http://www.indiangarden.nu/downloads/",
 		"pdf":"lunch.pdf"
 	},
 	{
-		"url":"http://www.wongkee.se/",
 		"name":"Wong Kee",
+		"url":"http://www.wongkee.se/",
 		"pdf":"lunchmeny.pdf"
 	},
 	{
-		"url":"http://www.rhinofood.se/extra/menyer/",
 		"name":"Rhino",
+		"url":"http://www.rhinofood.se/extra/menyer/",
 		"filter": {
 			"element":"a",
 			"attr":"href",
@@ -35,19 +36,20 @@
 		}
 	},
 	{
-		"url":"http://xn--bistrosjviken-pmb.se/#featured-page-3",
 		"name":"Bistro Sjöviken",
+		"url":"http://xn--bistrosjviken-pmb.se/#featured-page-3",
 		"dom":"#dagens-table"
 	},
 	{
-		"url":"http://www.sapori.se/se/liljeholmen/lunch-21608079",
 		"name":"Sapori",
+		"url":"http://www.sapori.se/se/liljeholmen/lunch-21608079",
 		"dom":"#collection0"
 	},
 	{
-		"url":"http://blackswan.nu/mat_dryck/lunch/",
 		"name":"The Black Swan",
-		"dom":".main"
+		"url":"http://blackswan.nu/mat_dryck/lunch/",
+		"dom":".main",
+		"css":".main-txt h1 { font-size: 2em; } .main-txt strong { font-weight: normal; }"
 	}	
 ]
 }
