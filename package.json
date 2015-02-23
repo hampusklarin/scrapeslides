@@ -8,7 +8,7 @@
     "cheerio": "latest",
     "express": "latest",
     "lodash": "^2.4.1",
-    "npm-cache": "^0.1.0",
+    "node-cache": "^1.1.0",
     "request": "latest",
     "swig": "latest"
   }
