@@ -12,10 +12,8 @@ They should be an array called "sources", where for each source you have a
 * "url" (screen scraping destination)
 
 and then pick a technique
-1.  "dom" (DOM selector to find specific data, for example "#content")
+1.  "dom" (DOM selector to scrape HTML, for example "#content")
 2.  "pdf" (link straight to a PDF file)
-3.  "filter", which is another JSON object that tries to extract a PDF from
-the "element", where the "attribute" contains the supplied "contains" text
+3.  "filter", which is a JSON object that tries to extract a PDF from the "element", where "attribute" contains the supplied "contains" text
 
-* "css" (optional, gets injected as inline styles to prettify the HTML retrieved)
-
+* "css" (optional, gets injected as inline styles to prettify the retrieved HTML)
