@@ -1,17 +1,17 @@
 Scrape Slides
 =============
 
-Simple Node.js screen scraper that puts several results into a slide interface
+Simple Node.js screen scraper that puts several results into a slide interface.
 
 sources.json
 ------------
-Screen scraping sources should be put in the sources.json file.
+Screen scraping sources should be put in the `sources.json` file. An example can be found in the `lunchmenus` branch.
 
-They should be an array called "sources", where for each source you have a
+The data should be an array called `sources`, where for each source there is a
 * `name` (becomes heading of slide)
 * `url` (screen scraping destination)
-* pick a technique:
+* one of the following "techniques":
   1. `dom` (DOM selector to scrape HTML, for example "#content")
   2. `pdf` (link straight to a PDF file)
   3. `filter` (JSON object to extract a PDF from the "element", where "attribute" contains the supplied "contains" text)
-* `css` (optional, gets injected as inline styles to prettify the retrieved HTML)
+* (optional) `css` (gets injected as inline styles to prettify the retrieved HTML)
