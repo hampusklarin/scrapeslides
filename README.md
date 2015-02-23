@@ -14,4 +14,4 @@ The data should be an array called `sources`, where for each source there is a
   1. `dom` (DOM selector to scrape HTML, for example "#content")
   2. `pdf` (link straight to a PDF file)
   3. `filter` (JSON object to extract a PDF from the "element", where "attribute" contains the supplied "contains" text)
-* (optional) `css` (gets injected as inline styles to prettify the retrieved HTML)
+* `css` (optional, gets injected as inline styles to prettify the retrieved HTML)
