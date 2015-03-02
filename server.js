@@ -77,7 +77,7 @@ app.get('/', function(req, res) {
 						}
 						else if( source.pdf )
 						{
-							var pdfObject = util.iframePDF(source.url+source.pdf);
+							var pdfObject = util.createObjectTag(source.url+source.pdf);
 							content = pdfObject;
 						}
 						else if( source.filter )
@@ -88,8 +88,8 @@ app.get('/', function(req, res) {
 
 							if( links && links[0])
 							{
-								var pdfObject = util.iframePDF(links[0].attribs.href);
-								content = pdfObject;
+								var object = util.createObjectTag(links[0].attribs.href);
+								content = object;
 							}
 						}
 
