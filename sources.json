@@ -23,8 +23,8 @@
 	},
 	{
 		"name":"Wong Kee",
-		"url":"http://www.wongkee.se/",
-		"pdf":"lunchmeny.pdf"
+		"url":"http://www.wongkee.se/lunch",
+		"dom":"#page-content"
 	},
 	{
 		"name":"Rhino",
