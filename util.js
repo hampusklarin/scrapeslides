@@ -1,9 +1,9 @@
 module.exports = {
-	iframePDF: function(PDFurl) {
-		var pdfObject = "<object data='"+PDFurl+"' type='application/pdf' width='100%' height='90%'>";
-		pdfObject += "<p>No PDF plugin found</p>";
-		pdfObject += "</object>";
+	createObjectTag: function(url) {
+		var objectTag = "<object data='"+url+"' width='100%' height='90%'>";
+		objectTag += "<p>No suitable plugin found for "+url+"</p>";
+		objectTag += "</object>";
 
-		return pdfObject;
+		return objectTag;
 	}
 };
