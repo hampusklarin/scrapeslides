@@ -11,7 +11,7 @@ The data should be an array called `sources`, where for each source there is a
 * `name` (becomes heading of slide)
 * `url` (screen scraping destination)
 * one of the following "techniques":
-  1. `dom` (DOM selector to scrape HTML, for example "#content")
-  2. `pdf` (link straight to a PDF file)
-  3. `filter` (JSON for creating a simple HTML &lt;object&gt; by getting an url from "element", where "attribute" contains the supplied "contains" text)
-* `css` (optional, gets injected as inline styles to prettify the retrieved HTML)
+  1. `dom` (string, DOM selector to scrape HTML, for example "#content")
+  2. `pdf` (string, link straight to a PDF file)
+  3. `filter` (JSON object, creates a simple HTML &lt;object&gt; by getting an URL from the "element" where "attribute" contains the supplied "contains" text)
+* `css` (optional string, gets injected as scoped inline styles to prettify the retrieved HTML)
