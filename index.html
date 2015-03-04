@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 
 		<title>..:: Scrape Slides ::..</title>
+		<!-- https://github.com/hampusklarin/scrapeslides -->
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
@@ -14,22 +15,25 @@
 
 	<body>
 
+		<div id="topbar">
+		</div>
+
 		<div class="reveal">
 			
 			<div class="slides menus">
-        		{% for result in results %}
+        		{% for result in results %}	
           			<style type="text/css" scoped>
 						{{ result.css }}
 					</style>
           			<section>
-						<h2>{{ result.name }}</h2>
+						<h2 style="display:none;">{{ result.name }}</h2>
 						{{ result.content | safe }}
 					</section>
         		{% endfor %}
 			</div>
 
 		</div>
-
+		
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
@@ -39,22 +43,28 @@
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
+				history: false,
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none			
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } }
 				]
 			});
+
+			Reveal.addEventListener( 'ready', function( event ) {
+			    setName(event.currentSlide.getElementsByTagName("h2")[0].innerHTML);
+			} );
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				setName(event.currentSlide.getElementsByTagName("h2")[0].innerHTML);
+			});
+
+			function setName(name) {
+				document.getElementById('topbar').innerHTML = name;
+			}
 		</script>
-		<a href="https://github.com/hampusklarin/scrapeslides"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 	</body>
 </html>
