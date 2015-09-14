@@ -40,6 +40,12 @@
 		"url":"http://blackswan.nu/mat_dryck/lunch/",
 		"dom":".main",
 		"css":".main-txt h1 { font-size: 2em; } .main-txt strong { font-weight: normal; }"
-	}	
+	},
+    {
+        "name":"O´Learys",
+        "url":"http://www.olearys.se/liljeholmstorget/menu/lunchmenu",
+        "dom":"#ctl00_ContentPlaceHolder1_TemplateArea_TC29066_SpanItemBase",
+        "css":".main-txt h1 { font-size: 2em; } .main-txt strong { font-weight: normal; }"
+    }    
 ]
 }
