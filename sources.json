@@ -4,13 +4,7 @@
 		"name":"Nida",
 		"url":"http://www.nidacatering.com/lunch.aspx",
 		"dom":".lunchmenyContent"
-	},
-	{
-		"name":"9 Event",
-		"url":"http://9event.se/",
-		"dom":"#lunch div.row.text-center",
-		"css":".menus .block h2, .menus .block h5 { font-weight: normal; font-family: Lato, sans-serif; text-transform: none; font-size: 1em } .menus .block h5 { color: #93a1a1; }"
-	},
+	},	
 	{
 		"name":"BankOmat",	
 		"url":"http://seaside.restaurangbankomat.se/pages/lunchmeny/",
@@ -18,8 +12,8 @@
 	},
 	{
 		"name":"Indian Garden",
-		"url":"http://www.indiangarden.nu/downloads/",
-		"pdf":"lunch.pdf"
+		"url":"http://www.indiangarden.nu/pdf/",
+		"pdf":"ig_lunch.pdf"
 	},
 	{
 		"name":"Wong Kee",
@@ -37,8 +31,9 @@
 	},
 	{
 		"name":"Bistro Sjöviken",
-		"url":"http://xn--bistrosjviken-pmb.se/#featured-page-3",
-		"dom":"#dagens-table"
+		"url":"http://xn--bistrosjviken-pmb.se/meny",
+		"dom":".media-themed",
+		"css":"a.pull-left { display: block; height: 60px; } a.pull-left img { display: none; }"		
 	},
 	{
 		"name":"Sapori",
