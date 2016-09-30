@@ -1,15 +1,22 @@
 {
   "name": "scrapeslides",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Scrape slides",
   "main": "server.js",
   "author": "Hampus Klarin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hampusklarin/scrapeslides.git"
+  },
+  "license": "GPL-3.0",
   "dependencies": {
     "cheerio": "latest",
-    "express": "latest",
+    "express": "^4.10.6",
+    "express-react-views": "^0.10.2",
     "lodash": "^2.4.1",
     "node-cache": "^1.1.0",
-    "request": "latest",
-    "swig": "latest"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "request": "latest"
   }
 }

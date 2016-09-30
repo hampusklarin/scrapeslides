@@ -4,42 +4,6 @@
 		"name":"Nida",
 		"url":"http://www.nidacatering.com/lunch.aspx",
 		"dom":".lunchmenyContent"
-	},	
-	{
-		"name":"BankOmat",	
-		"url":"http://seaside.restaurangbankomat.se/pages/lunchmeny/",
-		"dom":"#text article"
-	},
-	{
-		"name":"Indian Garden",
-		"url":"http://www.indiangarden.nu/pdf/",
-		"pdf":"ig_lunch_2016.pdf"
-	},
-	{
-		"name":"Wong Kee",
-		"url":"http://www.wongkee.se/lunch",
-		"dom":"#page-content"
-	},
-	{
-		"name":"Rhino",
-		"url":"http://www.rhinofood.se/extra/menyer/",
-		"filter": {
-			"element":"a",
-			"attr":"href",
-			"contains":"lunch"
-		}
-	},
-	{
-		"name":"Bistro Sjöviken",
-		"url":"http://xn--bistrosjviken-pmb.se/meny",
-		"dom":".media-themed",
-		"css":"a.pull-left { display: block; height: 60px; } a.pull-left img { display: none; }"		
-	},
-	{
-		"name":"The Black Swan",
-		"url":"http://blackswan.nu/mat_dryck/lunch/",
-		"dom":".main",
-		"css":".main-txt h1 { font-size: 2em; } .main-txt strong { font-weight: normal; }"
 	}   
 ]
 }
